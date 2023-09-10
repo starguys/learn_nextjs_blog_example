@@ -2,10 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
 import Script from "next/script";
+import Layout from "../../compoents/layout";
 
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
         <Script
@@ -27,6 +28,6 @@ export default function FirstPost() {
         width={144} // Desired size with correct aspect ratio
         alt="Your Name"
       />
-    </>
+    </Layout>
   );
 }
